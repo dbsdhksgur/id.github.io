@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>STAR STRIKE - 갤러거 스타일 슈팅 게임</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="cabinet">
+    <canvas id="game" width="480" height="640" aria-label="STAR STRIKE 게임 화면"></canvas>
+
+    <div class="controls" aria-label="터치 컨트롤">
+      <div class="dpad">
+        <button class="btn" data-key="left" aria-label="왼쪽">◀</button>
+        <button class="btn" data-key="right" aria-label="오른쪽">▶</button>
+      </div>
+      <button class="btn fire" data-key="fire" aria-label="발사">FIRE</button>
+    </div>
+
+    <p class="help">
+      ← → / A D : 이동 &nbsp;|&nbsp; SPACE / Z : 발사 &nbsp;|&nbsp; ENTER : 시작<br>
+      P : 일시정지 &nbsp;|&nbsp; M : 소리 끄기/켜기
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
